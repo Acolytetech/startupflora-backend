@@ -41,11 +41,21 @@ export const Testimonials = defineType ({
         description: "Short testimonial quote",
       }),
       defineField({
-        name: "details",
-        title: "Details",
+        name: "description",
+        title: "Description",
         type: "text",
         description: "Detailed description of the testimonial",
       }),
+      defineField({
+        name: "published_at",
+        title: "Published at",
+        type: "datetime",
+        description: "When the testimonial was published",
+        options: {  
+          dateFormat: "YYYY-MM-DD HH:mm:ss",
+          timeFormat: "HH:mm:ss",
+          },
+          }),
    
     ],
   });
