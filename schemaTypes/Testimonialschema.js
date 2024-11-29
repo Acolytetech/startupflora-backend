@@ -12,6 +12,14 @@ export const Testimonials = defineType ({
         description: "Name of the person giving the testimonial",
       }),
       defineField({
+        name: "slug",
+        title: "Slug",
+        type: "slug",
+        options: {
+          source: "name",
+        },
+      }),
+      defineField({
         name: "image",
         title: "Image",
         type: "image",
