@@ -31,7 +31,7 @@ export const Testimoinalcontentschema = defineType({
       title: "Description",
       type: "array",
       description: "Add description points as a list.",
-      of: [{ type: "string" }],
+      of: [{ type: "block" }],
       validation: (Rule) => Rule.min(1).max(20),
     }),
   ],
