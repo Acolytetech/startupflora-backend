@@ -44,8 +44,6 @@ export const Testimonials = defineType ({
         name: "description",
         title: "Description",
         type: "text",
-        of: [{ type: 'block' }],
-
         description: "Detailed description of the testimonial",
       }),
       defineField({
