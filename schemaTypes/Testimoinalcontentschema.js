@@ -29,9 +29,9 @@ export const Testimoinalcontentschema = defineType({
     defineField({
       name: "description",
       title: "Description",
-      type: "string",
-      description: "Add description points as a list.",
+      type: "array",
       of: [{ type: "block" }],
+      description: "Add description points as a list.",
       validation: (Rule) => Rule.min(1).max(20),
     }),
   ],
