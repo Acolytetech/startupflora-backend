@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'startupflora-backend',
 
-  projectId: '5wj22xur',
+  projectId: 'h83n4udb',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],
